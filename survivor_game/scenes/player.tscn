@@ -1,6 +1,7 @@
-[gd_scene load_steps=68 format=3 uid="uid://b0o2js2itvxtk"]
+[gd_scene load_steps=69 format=3 uid="uid://b0o2js2itvxtk"]
 
 [ext_resource type="Texture2D" uid="uid://fmm7wr11ot0m" path="res://art/character/survivalgame-player-green.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://c4rf6ocm1y62q" path="res://player.gd" id="1_g2els"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
 atlas = ExtResource("1_3vyb7")
@@ -547,6 +548,7 @@ animations = [{
 radius = 4.12311
 
 [node name="player" type="CharacterBody2D"]
+script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_fuw3a")
