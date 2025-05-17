@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://ba082loe86s3b"]
 
 [ext_resource type="Texture2D" uid="uid://ddjk1h3sa1gwd" path="res://art/environment/apple-icon.png" id="1_fnpk3"]
-[ext_resource type="Script" uid="uid://c642ptlb4uo71" path="res://scene/apple_collectable.gd" id="1_s3jk0"]
+[ext_resource type="Script" uid="uid://c642ptlb4uo71" path="res://scripts/apple_collectable.gd" id="1_s3jk0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6sb60"]
 atlas = ExtResource("1_fnpk3")
