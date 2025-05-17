@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=4 uid="uid://b3n0hlilm3ks0"]
+[gd_scene load_steps=12 format=4 uid="uid://babmxl42iu32x"]
 
-[ext_resource type="PackedScene" uid="uid://b0o2js2itvxtk" path="res://scenes/player.tscn" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://br253fkgiuvw5" path="res://scene/player.tscn" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://dukjd2iekcsc3" path="res://scene/apple_tree.tscn" id="1_qfnet"]
 [ext_resource type="Texture2D" uid="uid://c68m1r3rf8yti" path="res://art/environment/survivalgame-terrian-cliffs.png" id="2_k0juu"]
 [ext_resource type="Texture2D" uid="uid://bqop5og4hah8t" path="res://art/environment/survivalgame-terrian-defult.png" id="3_71j4m"]
 [ext_resource type="Texture2D" uid="uid://brt30fkcdpsyo" path="res://art/environment/survivalgame-trees.png" id="4_qfnet"]
@@ -258,12 +259,6 @@ sources/6 = SubResource("TileSetAtlasSource_qfnet")
 
 [node name="world" type="Node2D"]
 
-[node name="player" parent="." instance=ExtResource("1_nnsk1")]
-
-[node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource("TileSet_w7kh3")
-format = 2
-
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 
 [node name="1" type="TileMapLayer" parent="TileMapLayer"]
@@ -282,3 +277,9 @@ tile_set = SubResource("TileSet_w7kh3")
 use_parent_material = true
 tile_map_data = PackedByteArray("AAD6//7/BQAIAAEAAAD0/wUABQAEAAAAAAD2/wUABQAEAAAAAAD1/wUABQAEAAAAAAD3/wUABQAEAAAAAAD4/wUABQAEAAAAAAD5/wUABQAEAAAAAAD6/wUABQAEAAAAAAD7/wUABQAEAAAAAAD8/wUABQAEAAAAAAD9/wUABQAEAAAAAAD+/wUABQAFAAAAAAAAAAUABQADAAAAAAACAAUABQAEAAAAAAABAAUABQAEAAAAAAADAAUABQAEAAAAAAAEAAUABQAEAAAAAAAFAAUABQAEAAAAAAD0/wYABQAEAAEAAAD1/wYABQAEAAEAAAD2/wYABQAEAAEAAAD3/wYABQAEAAEAAAD4/wYABQAEAAEAAAD5/wYABQAEAAEAAAD6/wYABQAEAAEAAAD7/wYABQAEAAEAAAD8/wYABQAEAAEAAAD9/wYABQAEAAEAAAD+/wYABQAFAAEAAAAAAAYABQADAAEAAAABAAYABQAEAAEAAAACAAYABQAEAAEAAAADAAYABQAEAAEAAAAEAAYABQAEAAEAAAAFAAYABQAEAAEAAAABAP7/BQAIAAEAAAD8/wEABQAIAAEAAAD8/wMABQAIAAEAAAD3/wIABQAIAAEAAAD2/wEABQAIAAEAAAD3////BQAIAAEAAAD1//7/BQAIAAEAAAD0/wMABQAIAAEAAAAFAAQABQAIAAEAAAACAAQABQAIAAEAAAADAAIABQAIAAEAAAAEAAEABQAIAAEAAAAFAAAABQAIAAEAAAABAAEABQAIAAEAAAADAP//BQAIAAEAAAAFAP7/BQAIAAEAAAADAP3/BQAIAAEAAAAEAPz/BQAIAAEAAAACAPv/BQAIAAEAAAABAPz/BQAIAAEAAAAEAPr/BQAIAAEAAAACAPn/BQAIAAEAAAD8//r/BQAIAAEAAAD4//v/BQAIAAEAAAD9//n/BQAFAAIAAAD8//n/BQAFAAIAAAD+//n/BQAFAAIAAAD///n/BQAFAAIAAAD7//n/BQAFAAIAAAD2//r/BQARAAAAAAD4/wQABQAIAAEAAAD7/wQABQAIAAEAAAD9////BQARAAEAAAA=")
 tile_set = SubResource("TileSet_w7kh3")
+
+[node name="player" parent="." instance=ExtResource("1_nnsk1")]
+position = Vector2(-39, 42)
+
+[node name="apple_tree" parent="." instance=ExtResource("1_qfnet")]
+position = Vector2(-19, -20)
